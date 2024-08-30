@@ -6,6 +6,7 @@ bindVueRuntime({ Vue })
 // eslint-disable-next-line
 async function main() {
   await preFetchLib('hel-tpl-remote-vue3-comps-ts')
+  await preFetchLib('hel-tpl-remote-vue3-comps-vite')
 
   // 本地联调
   // await preFetchLib('hel-tpl-remote-vue3-comps-ts', {

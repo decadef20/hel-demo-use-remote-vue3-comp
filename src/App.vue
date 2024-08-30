@@ -2,21 +2,16 @@
   <div>
     <img alt="Vue logo" src="./assets/logo.png">
     <MasterHelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <AsyncViteComp />
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
+<script lang="ts" setup>
 import MasterHelloWorld from './components/MasterHelloWorld.vue'
+import AsyncViteComp from './components/AsyncViteComp.vue'
 
 console.log('see MasterHelloWorld', MasterHelloWorld)
 
-export default defineComponent({
-  name: 'App',
-  components: {
-    MasterHelloWorld
-  }
-})
 </script>
 
 <style>
